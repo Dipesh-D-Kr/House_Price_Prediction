@@ -5,10 +5,10 @@ import pandas as pd
 
 st.title("hello this is Gurgaon Property Website")
 
-with open("df.pkl","rb") as file:
+with open("/df.pkl","rb") as file:
     data = pickle.load(file)
 
-with open("pipeline.pkl","rb") as ml_modl:
+with open("/pipeline.pkl","rb") as ml_modl:
     pipline = pickle.load(ml_modl)
 
 df = pd.DataFrame(data)
