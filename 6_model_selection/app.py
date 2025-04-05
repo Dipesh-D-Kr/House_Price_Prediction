@@ -1,4 +1,3 @@
-from msilib.schema import Property
 import numpy as np
 import streamlit as st
 import pickle
