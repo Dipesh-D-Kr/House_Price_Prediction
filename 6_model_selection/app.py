@@ -5,10 +5,16 @@ import pandas as pd
 
 st.title("hello this is Gurgaon Property Website")
 
-with open("/df.pkl","rb") as file:
-    data = pickle.load(file)
+import os
 
-with open("/pipeline.pkl","rb") as ml_modl:
+file_path = "df.pkl"
+if os.path.exists(file_path):
+    with open(file_path, "rb") as file:
+        data = pickle.load(file)
+else:
+    st.error(f"File not found: {file_path}")
+    
+with open("pipeline.pkl","rb") as ml_modl:
     pipline = pickle.load(ml_modl)
 
 df = pd.DataFrame(data)
