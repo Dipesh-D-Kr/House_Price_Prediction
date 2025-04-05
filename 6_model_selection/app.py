@@ -7,7 +7,7 @@ st.title("hello this is Gurgaon Property Website")
 
 import os
 
-file_path = "df.pkl"
+file_path = "House_Price_Prediction/6_model_selection/df.pkl"
 if os.path.exists(file_path):
     with open(file_path, "rb") as file:
         data = pickle.load(file)
