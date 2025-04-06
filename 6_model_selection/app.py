@@ -17,7 +17,7 @@ else:
 file_path2 = "6_model_selection/pipeline.pkl"
 if os.path.exists(file_path2):
     with open(file_path2, "rb") as file:
-        df = pickle.load(file)
+        pipeline = pickle.load(file)
 else:
     st.error(f"File not found: {file_path}")
 
