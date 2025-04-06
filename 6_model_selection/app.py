@@ -7,19 +7,14 @@ st.title("hello this is Gurgaon Property Website")
 
 import os
 
-file_path = "6_model_selection/df.pkl"
-if os.path.exists(file_path):
-    with open(file_path, "rb") as file:
-        data = pickle.load(file)
-else:
-    st.error(f"File not found: {file_path}")
+file_path ="6_model_selection/df.pkl"
+with open(file_path, "rb") as file:
+    data = pickle.load(file)
+
     
 file_path2 = "6_model_selection/pipeline.pkl"
-if os.path.exists(file_path2):
-    with open(file_path2, "rb") as file:
-        pipeline = pickle.load(file)
-else:
-    st.error(f"File not found: {file_path}")
+with open(file_path2, "rb") as file:
+    pipeline = pickle.load(file)
 
 df = pd.DataFrame(data)
 #st.dataframe(df)
