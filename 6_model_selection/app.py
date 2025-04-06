@@ -61,6 +61,6 @@ if st.button("Predict"):
         price = np.expm1(pipeline.predict(input_df))
         upper_bound = price*100+15.0
         lower_bound = price*100-15.0
-        st.success(f"🏷️ Predicted Price is Between: ₹{Lower_bound} L - ₹{upper_bound} L")
+        st.success(f"🏷️ Predicted Price is Between: ₹{lower_bound} L - ₹{upper_bound} L")
     except Exception as e:
         st.error(f"Prediction failed: {e}")
