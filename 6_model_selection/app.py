@@ -14,7 +14,7 @@ if os.path.exists(file_path):
 else:
     st.error(f"File not found: {file_path}")
     
-with open("pipeline.pkl","rb") as ml_modl:
+with open("6_model_selection/pipeline.pkl","rb") as ml_modl:
     pipline = pickle.load(ml_modl)
 
 df = pd.DataFrame(data)
