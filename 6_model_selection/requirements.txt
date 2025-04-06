@@ -53,4 +53,4 @@ validators==0.22.0
 watchdog==4.0.0
 wordcloud==1.9.3
 zipp==3.17.0
-streamlit
+scikit-learn
